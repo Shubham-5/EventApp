@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    background-color: rgb(234, 217, 217);
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 5px 10px;
+    background-color: rebeccapurple;
+    color: whitesmoke;
+}
+
+.nav-items-group {
+    display: flex;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-container input {
+    color: rebeccapurple;
+    padding-left: 1.5rem;
+}
+
+.search-icon {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    color: black;
+    z-index: 100;
+}
+
+.nav-item {
+    margin: 0 5px;
+    padding: 5px;
+    color: whitesmoke;
+}
+
+.nav-item.green {
+    background: green;
+    box-shadow: none;
+    border-color: antiquewhite;
+}
+
+.nav-item.red {
+    background-color: red;
+    box-shadow: none;
+    border-color: antiquewhite;
+}
+
+.sidebar {
+    background-color: skyblue;
+    color: white;
+    width: 3rem;
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar-btn {
+    padding: 10px;
+}
+
+.layout {
+    display: flex;
+}
+
+.events {
+    margin: 5px;
+    padding: 5px;
+    background-color: white;
+    flex: 1;
+}
+
+.events-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+}
+
+.event-container {
+    height: calc(100vh - 97px);
+    overflow-y: auto;
+}
+
+.event {
+    background-color: rgb(234, 217, 217);
+    padding: 5px;
+    margin: 5px 0px;
+}
+
+select {
+    padding: 2px;
+}
+
+.event:hover {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.event.active {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.event-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event p {
+    font-size: 15px;
+}
+
+.profile {
+    display: flex;
+    background-color: white;
+    flex: 2;
+    font-size: 21px;
+}
+
+.profile-image {
+    height: calc(100vh - 200px);
+    padding: 1rem 2rem 1rem 1rem;
+}
+
+.profile-image img {
+    margin: 2px;
+    object-fit: cover;
+    max-width: 280px;
+    min-height: 530px;
+}
+
+.profile-details {
+    margin: 3rem 1rem 1rem 1rem;
+}
+
+.profile-details>div {
+    margin: 2rem 0;
+}
+
+button {
+    padding: 5px;
+    border: none;
+    background: none;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px;
+    border: 1px solid rebeccapurple;
+    background-color: rgb(234, 217, 217);
+}
